@@ -47,9 +47,6 @@
 .jugador__titulo,.computadora__titulo{
     font-size: 2em;
 }
-.computadora__titulo{
-
-}
   
 .jugador__opciones,.computadora__opciones{
     display: flex;

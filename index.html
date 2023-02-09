@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/index.css" />
+    <title>Piedra, Papel o Tijera</title>
+  </head>
+  <body class="game">
+    <h1 class="titulo">Piedra, Papel o Tijera</h1>
+    <section class="marcador">
+      <h2 class="marcador__puntaje">0-0</h2>
+      <h3 class="marcador__tag">MARCADOR</h3>
+    </section>
+    <section class="jugador">
+        <h2 class="jugador__titulo">Tu</h2>
+        <h2 class="jugador__advertencia">Seleciona una opción</h2>
+        <section class="jugador__opciones">
+            <img class="jugador__opciones_img" src="./imgs/papel.JPG" alt="papel" >
+            <img class="jugador__opciones_img"  src="./imgs/piedra.JPG" alt="piedra">
+            <img class="jugador__opciones_img" src="./imgs/tijera.JPG" alt="tijera">
+        </section>
+    </section>
+    <section class="jugadaJugador">
+        <img class="jugadaJugador__img"src="./imgs/papel.JPG">
+        <h1 class="jugadaJugador__valor"> Papel</h1>
+    </section>
+    <div class="linea"></div>
+    <section class="jugadaComputadora">
+        <img class="jugadaComputadora__img"src="./imgs/papel.JPG">
+        <h1 class="jugadaComputadora__valor"> Papel</h1>
+    </section>
+    <section class="computadora">
+        <h2 class="computadora__titulo">Comp.</h2>
+        <h2 class="computadora__advertencia">Seleciona una opción</h2>
+        <section class="computadora__opciones">
+            <img class="computadora__opciones_img" src="./imgs/papel.JPG" alt="papel">
+            <img class="computadora__opciones_img"  src="./imgs/piedra.JPG" alt="piedra">
+            <img class="computadora__opciones_img"  src="./imgs/tijera.JPG" alt="tijera">
+        </section>
+    </section>
+    <div class="resultado">Ganaste</div>
+    <script src="script.js"></script>
+  </body>
+</html>

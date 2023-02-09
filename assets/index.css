@@ -1,0 +1,112 @@
+.game{
+    display:grid;
+    grid-template-columns : repeat(2,24%) 4% repeat(2,24%);
+    grid-template-rows : repeat(3,1f);
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    grid-row: 1;
+    grid-column: 1/6;
+    font-size: 3em;
+    padding:0.2em;
+    background:#c9c0be;
+}
+
+.marcador{
+    grid-row: 2;
+    grid-column: 1/6;
+    padding:1em;
+}
+.marcador__puntaje{
+    font-size: 2.5em;
+    padding:0.2em;
+}
+.marcador__tag{
+    font-size: 0.8em;
+}
+
+.jugador{
+    grid-row: 3;
+    grid-column: 1;
+}
+.computadora{
+    grid-row: 3;
+    grid-column: 5;
+}
+.computadora__advertencia{
+    opacity: 0;
+}
+.jugador,.computadora{
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.jugador__titulo,.computadora__titulo{
+    font-size: 2em;
+}
+.computadora__titulo{
+
+}
+  
+.jugador__opciones,.computadora__opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5em;
+}
+.jugador__opciones_img{
+    cursor: pointer;
+}
+.jugadaJugador{
+    grid-row: 3;
+    grid-column: 2;
+}
+.jugadaComputadora{
+    grid-row: 3;
+    grid-column: 4;
+}
+
+.jugadaJugador,.jugadaComputadora{
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    transform: scale(1.7);
+    gap: 0.5em;
+    opacity: 0;
+}
+.jugadaJugador__valor,.jugadaComputadora__valor{
+    font-size: 0.5em;
+    font-weight: bold;
+}
+.jugadaJugador__valor::first-letter,.jugadaComputadora__valor::first-letter {
+    text-transform: uppercase;
+  }
+  
+
+.linea{
+    grid-row: 3;
+    grid-column: 3;
+    height: 105%;
+    width: 2%;
+    background-color: black;
+    justify-self: center;
+    transition: opacity 0.5s;
+}
+
+.resultado{
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    grid-row: 3;
+    grid-column: 2/5;
+    font-size: 3em;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
